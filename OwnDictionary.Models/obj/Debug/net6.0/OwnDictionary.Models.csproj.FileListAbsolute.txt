@@ -9,3 +9,4 @@ C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Models\obj\Debug\net6.0\OwnDi
 C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Models\obj\Debug\net6.0\OwnDictionary.Models.dll
 C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Models\obj\Debug\net6.0\ref\OwnDictionary.Models.dll
 C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Models\obj\Debug\net6.0\OwnDictionary.Models.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Models\obj\Debug\net6.0\OwnDictionary.Models.csproj.AssemblyReference.cache

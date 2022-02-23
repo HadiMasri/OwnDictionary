@@ -10,9 +10,7 @@ namespace OwnDictionary.API.Extentions
     {
         public static void RegisterDependencies(this IServiceCollection services)
         {
-            //services.AddTransient<IMediator, Mediator>();
             services.AddTransient<IRepository<Term>, Repository<Term>>();
-            //services.AddTransient<ITermRepository, TermRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
     }

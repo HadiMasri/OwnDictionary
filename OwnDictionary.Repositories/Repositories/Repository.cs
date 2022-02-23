@@ -28,7 +28,8 @@ namespace OwnDictionary.Repositories.Repositories
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            var entity = _modelDbSets.Find(id);
+            _dbContext.Remove(entity);
         }
 
         public async Task<T> GetAsync(Expression<Func<T, bool>> predicate)
@@ -54,7 +55,16 @@ namespace OwnDictionary.Repositories.Repositories
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _modelDbSets.Attach(entity);
+                _dbContext.Entry(entity).State = EntityState.Modified;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
