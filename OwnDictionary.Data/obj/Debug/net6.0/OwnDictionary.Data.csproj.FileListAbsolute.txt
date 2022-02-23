@@ -1,0 +1,17 @@
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Data.deps.json
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Data.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\ref\OwnDictionary.Data.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Data.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Models.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Models.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.csproj.AssemblyReference.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.csproj.CopyComplete
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\ref\OwnDictionary.Data.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\bin\Debug\net6.0\OwnDictionary.Data.runtimeconfig.json
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Data\obj\Debug\net6.0\OwnDictionary.Data.genruntimeconfig.cache

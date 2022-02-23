@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OwnDictionary.Data\OwnDictionary.Data.csproj" />
+    <ProjectReference Include="..\OwnDictionary.Models\OwnDictionary.Models.csproj" />
+  </ItemGroup>
+
+</Project>

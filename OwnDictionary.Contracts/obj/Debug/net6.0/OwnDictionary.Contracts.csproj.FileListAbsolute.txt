@@ -1,0 +1,15 @@
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\OwnDictionary.Contracts.deps.json
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\OwnDictionary.Contracts.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\ref\OwnDictionary.Contracts.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\OwnDictionary.Contracts.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\OwnDictionary.Models.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\bin\Debug\net6.0\OwnDictionary.Models.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.csproj.AssemblyReference.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.csproj.CopyComplete
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\ref\OwnDictionary.Contracts.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Contracts\obj\Debug\net6.0\OwnDictionary.Contracts.pdb

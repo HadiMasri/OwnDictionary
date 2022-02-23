@@ -1,0 +1,17 @@
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Repositories.deps.json
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Repositories.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\ref\OwnDictionary.Repositories.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Repositories.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Data.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Models.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Data.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\bin\Debug\net6.0\OwnDictionary.Models.pdb
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.csproj.AssemblyReference.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.csproj.CopyComplete
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\ref\OwnDictionary.Repositories.dll
+C:\Users\Abdul\Desktop\OwnDictionary\OwnDictionary.Repositories\obj\Debug\net6.0\OwnDictionary.Repositories.pdb

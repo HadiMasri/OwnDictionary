@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "08a789d8-c2e9-444f-aa82-fc49fcc823f8": {
+      "ProjectGuid": "08a789d8-c2e9-444f-aa82-fc49fcc823f8",
+      "DisplayName": "OwnDictionary.API",
+      "ColorIndex": 0
+    },
+    "c37fecd6-07b8-4de8-a8b9-0bfcbcbb9d7a": {
+      "ProjectGuid": "c37fecd6-07b8-4de8-a8b9-0bfcbcbb9d7a",
+      "DisplayName": "OwnDictionary.Models",
+      "ColorIndex": 1
+    },
+    "3dd44f86-0755-4093-9202-def8f48ef7e3": {
+      "ProjectGuid": "3dd44f86-0755-4093-9202-def8f48ef7e3",
+      "DisplayName": "OwnDictionary.Data",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "4b73b23a-33b5-4a2e-ae27-3c95c1ee04a6": {
+      "ProjectGuid": "4b73b23a-33b5-4a2e-ae27-3c95c1ee04a6",
+      "DisplayName": "OwnDictionary.Repositories",
+      "ColorIndex": 3
+    },
+    "2560feb8-4c10-4cd6-bd29-27f98b75fc4c": {
+      "ProjectGuid": "2560feb8-4c10-4cd6-bd29-27f98b75fc4c",
+      "DisplayName": "OwnDictionary.Application",
+      "ColorIndex": 4
+    },
+    "dc69ed2a-e691-45e4-9e35-77e9dee22dad": {
+      "ProjectGuid": "dc69ed2a-e691-45e4-9e35-77e9dee22dad",
+      "DisplayName": "Contracts",
+      "ColorIndex": 5
+    },
+    "45ecab59-f0d9-438a-b224-20881e44b381": {
+      "ProjectGuid": "45ecab59-f0d9-438a-b224-20881e44b381",
+      "DisplayName": "OwnDictionary.Contracts",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}
