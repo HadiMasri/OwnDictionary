@@ -12,8 +12,8 @@ namespace OwnDictionary.Contracts.Dtos
         public Guid Id { get; set; }
         public string Word { get; set; }
         public string Description { get; set; }
-        public string Synonym { get; set; }
-        public string Example { get; set; }
+        public IEnumerable<Synonym> Synonyms { get; set; }
+        public IEnumerable<Example> Examples { get; set; }
 
 
         public static TermDto MapToDto(Term t)
@@ -23,8 +23,8 @@ namespace OwnDictionary.Contracts.Dtos
                 Id = t.Id,
                 Word = t.Word,
                 Description = t.Description,
-                Synonym = t.Synonym,
-                Example = t.Example
+                Synonyms = t.Synonyms,
+                Examples = t.Examples
             };
             return dto;
         }

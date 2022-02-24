@@ -10,15 +10,15 @@ namespace OwnDictionary.Models.Entities
     {
         public string Word { get; set; }
         public string Description { get; set; }
-        public string Synonym { get; set; }
-        public string Example { get; set; }
+        public IEnumerable<Synonym>? Synonyms { get; set; }
+        public IEnumerable<Example> Examples { get; set; }
 
-        public void Update(string word, string description, string synonym, string example)
+        public void Update(string word, string description, IEnumerable<Synonym> synonyms, IEnumerable<Example> examples)
         {
             this.Word = word;
             this.Description = description;
-            this.Synonym = synonym;
-            this.Example = example;
+            this.Synonyms = synonyms;
+            this.Examples = examples;
         }
     }
 }

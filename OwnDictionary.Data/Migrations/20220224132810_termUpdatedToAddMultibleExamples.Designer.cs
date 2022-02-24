@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OwnDictionary.Data;
 
@@ -11,9 +12,10 @@ using OwnDictionary.Data;
 namespace OwnDictionary.Data.Migrations
 {
     [DbContext(typeof(OwnDictionaryDbContext))]
-    partial class OwnDictionaryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220224132810_termUpdatedToAddMultibleExamples")]
+    partial class termUpdatedToAddMultibleExamples
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

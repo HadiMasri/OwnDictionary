@@ -27,8 +27,8 @@ namespace OwnDictionary.Application.CommandHandlers
             Term t = new Term();
             t.Word = request.Word;
             t.Description = request.Description;
-            t.Synonym = request.Synonym;
-            t.Example = request.Example;
+            t.Synonyms = request.Synonym;
+            t.Examples = request.Examples;
             _unitOfWork.TermRepository.Add(t);
             _unitOfWork.Commit();
             return _dxos.MapTermDto(t);

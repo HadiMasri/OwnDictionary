@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using OwnDictionary.Contracts.Dtos;
+using OwnDictionary.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace OwnDictionary.Contracts.Commands
     {
         public string Word { get; set; }
         public string Description { get; set; }
-        public string Synonym { get; set; }
-        public string Example { get; set; }
+        public IEnumerable<Synonym> Synonym { get; set; }
+        public IEnumerable<Example> Examples { get; set; }
     }
 }

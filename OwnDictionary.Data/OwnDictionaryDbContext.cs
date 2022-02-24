@@ -9,6 +9,8 @@ namespace OwnDictionary.Data
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Term> Terms { get; set; }
+        public DbSet<Synonym> Synonyms { get; set; }
+        public DbSet<Example> Examples { get; set; }
 
         public OwnDictionaryDbContext(DbContextOptions<OwnDictionaryDbContext> options)
            : base(options)

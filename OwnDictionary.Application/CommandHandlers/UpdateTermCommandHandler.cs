@@ -26,7 +26,7 @@ namespace OwnDictionary.Application.CommandHandlers
             var term = await _unitOfWork.TermRepository.GetAsync(b => b.Id == request.TermDto.Id && b.IsDelete == false);
             if (term == null) throw new ApplicationException("not Found");
             {
-                term.Update(request.TermDto.Word, request.TermDto.Description, request.TermDto.Synonym, request.TermDto.Example);
+                term.Update(request.TermDto.Word, request.TermDto.Description, request.TermDto.Synonyms, request.TermDto.Examples);
                 _unitOfWork.TermRepository.Update(term);
                 _unitOfWork.Commit();
                 return _dxos.MapTermDto(term);
