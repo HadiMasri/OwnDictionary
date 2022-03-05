@@ -14,6 +14,7 @@ namespace OwnDictionary.Repositories.UnitOfWork
     {
         private readonly OwnDictionaryDbContext _dbContext;
         private IRepository<Term> _termRepository;
+        private IRepository<Language> _languageRepository;
 
         public UnitOfWork(OwnDictionaryDbContext dbContext)
         {
@@ -29,6 +30,14 @@ namespace OwnDictionary.Repositories.UnitOfWork
             }
         }
 
+        public IRepository<Language> LanguageRepository
+        {
+            get
+            {
+                return _languageRepository = _languageRepository ?? new Repository<Language>(_dbContext);
+            }
+        }
+        
         public void Commit()
         {
             try

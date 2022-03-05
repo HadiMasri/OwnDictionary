@@ -75,6 +75,30 @@ namespace OwnDictionary.Data.Migrations
                     b.ToTable("Examples");
                 });
 
+            modelBuilder.Entity("OwnDictionary.Models.Entities.Language", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Modified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Language");
+                });
+
             modelBuilder.Entity("OwnDictionary.Models.Entities.Synonym", b =>
                 {
                     b.Property<Guid>("Id")
@@ -120,6 +144,9 @@ namespace OwnDictionary.Data.Migrations
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
+                    b.Property<Guid>("LanguageId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime>("Modified")
                         .HasColumnType("datetime2");
 
@@ -128,6 +155,8 @@ namespace OwnDictionary.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("LanguageId");
 
                     b.ToTable("Terms");
                 });
@@ -144,6 +173,20 @@ namespace OwnDictionary.Data.Migrations
                     b.HasOne("OwnDictionary.Models.Entities.Term", null)
                         .WithMany("Synonyms")
                         .HasForeignKey("TermId");
+                });
+
+            modelBuilder.Entity("OwnDictionary.Models.Entities.Term", b =>
+                {
+                    b.HasOne("OwnDictionary.Models.Entities.Language", null)
+                        .WithMany("Terms")
+                        .HasForeignKey("LanguageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("OwnDictionary.Models.Entities.Language", b =>
+                {
+                    b.Navigation("Terms");
                 });
 
             modelBuilder.Entity("OwnDictionary.Models.Entities.Term", b =>

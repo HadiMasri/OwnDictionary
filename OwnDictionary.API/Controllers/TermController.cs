@@ -24,10 +24,10 @@ namespace OwnDictionary.API.Controllers
             return await ExcuteRequest(cmd);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet("languageId")]
+        public async Task<IActionResult> Get(Guid? languageId)
         {
-            return await ExcuteRequest(new GetAllTermsQuery());
+            return await ExcuteRequest(new GetAllTermsQuery { languageId = languageId } );
         }
 
         [HttpGet("{id}")]

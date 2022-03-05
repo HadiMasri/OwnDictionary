@@ -10,6 +10,7 @@ namespace OwnDictionary.Models.Entities
     {
         public string Word { get; set; }
         public string Description { get; set; }
+        public Guid LanguageId { get; set; }
         public IEnumerable<Synonym>? Synonyms { get; set; }
         public IEnumerable<Example> Examples { get; set; }
 

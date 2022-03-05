@@ -12,9 +12,9 @@ namespace OwnDictionary.Repositories.IRepositories
     {
         void Add(T entity);
         void Delete(Guid id);
-        Task<T> GetAsync(Expression<Func<T, bool>> predicate);
+        Task<T> GetAsync(Expression<Func<T, bool>> predicate, Expression<Func<T, object>> include1 = null, Expression<Func<T, object>> include2 = null);
         Task<IEnumerable<T>> GetListAsync();
-        Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate);
+        Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate, Expression<Func<T, object>> include1 = null, Expression<Func<T, object>> include2 = null);
         void SaveChangesAsync();
         void Update(T entity);
     }

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using OwnDictionary.Application.Dxos;
 using OwnDictionary.Contracts.Commands;
 using OwnDictionary.Contracts.Dtos;
@@ -15,11 +16,12 @@ namespace OwnDictionary.Application.CommandHandlers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ITermDxos _dxos;
-
-        public UpdateTermCommandHandler(IUnitOfWork unitOfWork, ITermDxos dxos)
+        private readonly IMemoryCache _memoryCache;
+        public UpdateTermCommandHandler(IUnitOfWork unitOfWork, ITermDxos dxos, IMemoryCache memoryCache)
         {
             _unitOfWork = unitOfWork;
             _dxos = dxos;
+            _memoryCache = memoryCache;
         }
         public async Task<TermDto> Handle(UpdateTermCommand request, CancellationToken cancellationToken)
         {
@@ -29,6 +31,13 @@ namespace OwnDictionary.Application.CommandHandlers
                 term.Update(request.TermDto.Word, request.TermDto.Description, request.TermDto.Synonyms, request.TermDto.Examples);
                 _unitOfWork.TermRepository.Update(term);
                 _unitOfWork.Commit();
+                if (!_memoryCache.TryGetValue("term", out TermDto termDto))
+                {
+                    var cacheEntryOptions = new MemoryCacheEntryOptions()
+                        .SetSlidingExpiration(TimeSpan.FromSeconds(3));
+
+                    _memoryCache.Set("term", termDto, cacheEntryOptions);
+                }
                 return _dxos.MapTermDto(term);
             }
         }

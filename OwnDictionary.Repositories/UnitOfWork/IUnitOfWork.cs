@@ -11,8 +11,9 @@ namespace OwnDictionary.Repositories.UnitOfWork
     public interface IUnitOfWork
     {
         IRepository<Term> TermRepository { get; }
+        IRepository<Language> LanguageRepository { get; }
 
-
+        
         void Commit();
         void Rollback();
     }

@@ -12,6 +12,7 @@ namespace OwnDictionary.Contracts.Dtos
         public Guid Id { get; set; }
         public string Word { get; set; }
         public string Description { get; set; }
+        public Guid LanguageId { get; set; }
         public IEnumerable<Synonym> Synonyms { get; set; }
         public IEnumerable<Example> Examples { get; set; }
 

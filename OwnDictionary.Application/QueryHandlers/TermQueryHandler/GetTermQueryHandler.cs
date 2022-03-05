@@ -23,7 +23,9 @@ namespace OwnDictionary.Application.QueryHandlers
         }
         public async Task<TermDto> Handle(GetTermQuery request, CancellationToken cancellationToken)
         {
-            var term = await _unitOfWork.TermRepository.GetAsync(s => s.Id == request.Id);
+
+            var term = await _unitOfWork.TermRepository.GetAsync(s => s.Id == request.Id && s.IsDelete == false, p => p.Synonyms, f => f.Examples);
+            if (term is null) throw new Exception("Not Found");
             return _dxos.MapTermDto(term);
         }
     }

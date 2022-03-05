@@ -11,6 +11,7 @@ namespace OwnDictionary.Data
         public DbSet<Term> Terms { get; set; }
         public DbSet<Synonym> Synonyms { get; set; }
         public DbSet<Example> Examples { get; set; }
+        public DbSet<Language> Language { get; set; }
 
         public OwnDictionaryDbContext(DbContextOptions<OwnDictionaryDbContext> options)
            : base(options)

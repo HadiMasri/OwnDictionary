@@ -32,8 +32,21 @@ namespace OwnDictionary.Repositories.Repositories
             _dbContext.Remove(entity);
         }
 
-        public async Task<T> GetAsync(Expression<Func<T, bool>> predicate)
+        public async Task<T> GetAsync(Expression<Func<T, bool>> predicate, Expression<Func<T, object>> include1 = null, Expression<Func<T, object>> include2 = null)
         {
+            if (include1 != null && include2 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include1).Include(include2).FirstOrDefaultAsync();
+            }
+            else if (include1 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include1).FirstOrDefaultAsync();
+            }
+            else if (include2 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include2).FirstOrDefaultAsync();
+            }
+
             return await _modelDbSets.Where(predicate).FirstOrDefaultAsync();
         }
 
@@ -42,8 +55,20 @@ namespace OwnDictionary.Repositories.Repositories
             return await _modelDbSets.ToListAsync();
         }
 
-        public async Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate)
+        public async Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate , Expression<Func<T, object>> include1 = null, Expression<Func<T, object>> include2 = null)
         {
+            if (include1 != null && include2 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include1).Include(include2).ToListAsync();
+            }
+            else if (include1 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include1).ToListAsync();
+            }
+            else if (include2 != null)
+            {
+                return await _modelDbSets.Where(predicate).Include(include2).ToListAsync();
+            }
             return await _modelDbSets.Where(predicate).ToListAsync();
         }
 

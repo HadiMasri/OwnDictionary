@@ -18,6 +18,8 @@ namespace OwnDictionary.Application.Extentions
         {
             services.AddMediatR(Assembly.GetAssembly(typeof(ApplicationExtentions)));
             services.AddScoped<ITermDxos, TermDxos>();
+            services.AddScoped<ILanguageDxos, LanguageDxos>();
+
             AssemblyScanner.FindValidatorsInAssemblyContaining<CommandBase<IValidator>>().ForEach(pair =>
             {
                 services.Add(ServiceDescriptor.Transient(pair.InterfaceType, pair.ValidatorType));

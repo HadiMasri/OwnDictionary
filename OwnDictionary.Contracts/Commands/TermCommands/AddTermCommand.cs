@@ -9,19 +9,11 @@ using System.Threading.Tasks;
 
 namespace OwnDictionary.Contracts.Commands
 {
-    public class AddBookCommandValidator : AbstractValidator<AddTermCommand>
-    {
-        public AddBookCommandValidator()
-        {
-            //Include(baseRequestValidators);
-            RuleFor(x => x.Word).NotEmpty();
-        }
-    }
-
     public class AddTermCommand : CommandBase<TermDto>
     {
         public string Word { get; set; }
         public string Description { get; set; }
+        public Guid LanguageId { get; set; }
         public IEnumerable<Synonym> Synonym { get; set; }
         public IEnumerable<Example> Examples { get; set; }
     }

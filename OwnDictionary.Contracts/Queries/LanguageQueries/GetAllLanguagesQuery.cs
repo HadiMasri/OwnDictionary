@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OwnDictionary.Contracts.Queries
+namespace OwnDictionary.Contracts.Queries.LanguageQueries
 {
-    public class GetAllTermsQuery : QueryBase<IEnumerable<TermDto>>
-    {
+    public class GetAllLanguagesQuery : QueryBase<IEnumerable<LanguageDto>>
+    { 
     }
 }
